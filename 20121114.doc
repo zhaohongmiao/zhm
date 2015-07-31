@@ -1,0 +1,10 @@
+>> f=zeros(256,256);
+>> imshow(f)
+>> fc=f(125:131,:);
+>> f(125:131,:)=1;
+>> imshow(f)
+>> F=fft2(f);
+>> Fc=fftshift(F);
+>> s=abs(Fc);
+>> imshow(s)
+>> figure,imshow(f)
